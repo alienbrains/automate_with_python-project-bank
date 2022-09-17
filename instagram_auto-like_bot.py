@@ -1,23 +1,3 @@
-em='sh.sweta.4791@gmail.com'
-pwd='al20br20?'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #open Google
 from selenium import webdriver
 import time
@@ -27,11 +7,11 @@ browser.get('https://www.instagram.com/')
 time.sleep(2)
 #give my email
 ubox=browser.find_element_by_name("username")
-ubox.send_keys(em)
+ubox.send_keys(em) # save your mail id in em
 
 #give my password
 pbox=browser.find_element_by_name("password")
-pbox.send_keys(pwd)
+pbox.send_keys(pwd) # save your password in pwd
 
 #click on log in button
 btn= browser.find_element_by_xpath('//button[@class="sqdOP  L3NKy   y3zKF     "]')
